@@ -1,2 +1,2 @@
 # urban-memory
-Hello, World! I'm junior pythonist
+Hello, World! I'm a junior pythonist
