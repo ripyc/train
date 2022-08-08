@@ -178,6 +178,7 @@ class CodeReviewer(Human):
             ans = super().answer_question(question)
         return ans
 
+
 class Mentor(Human):
     def answer_question(self, question):
         if question == "как устроиться работать питонистом?":
@@ -186,6 +187,7 @@ class Mentor(Human):
         else:
             ans = super().answer_question(question)
         return ans
+
 
 # следующий код менять не нужно, он работает, мы проверяли
 student1 = Student('Тимофей')

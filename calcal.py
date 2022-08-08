@@ -108,7 +108,7 @@ cash_test.add_record(r3)
 # Ввод валюты для проверки остатка кошелька
 def currency_check():
     while True:
-        valuta = input("Введите валюту в которой хотите посмотреть баланс (rub, usd или eur:\n")
+        valuta = input("Введите валюту (rub, usd или eur) в которой хотите посмотреть баланс:\n")
         if valuta == "rub" or valuta == "usd" or valuta == "eur":
             return valuta
 print(cash_test.get_today_cash_remained(currency_check()))
@@ -122,5 +122,5 @@ comment_test = input("Оставьте по ним комментарии:\n")
 r7 = Record(amount=amount_test, comment=comment_test)
 cal_test.add_record(r7)
 
-print(f"Статистика на счегодня {cal_test.get_today_stats()}")
+print(f"Сегодня употреблено {cal_test.get_today_stats()} каллорий")
 print(cal_test.get_calories_remained())
